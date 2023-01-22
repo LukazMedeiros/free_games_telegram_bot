@@ -1,5 +1,5 @@
 export async function GetFreeGamesUrl(page) {
-  await page.goto("https://www.nerdmaldito.com/", {
+  await page.goto(process.env.SITE, {
     waitUntil: "networkidle2",
   });
 
