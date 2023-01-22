@@ -20,7 +20,7 @@ async function Main() {
     message += `${element.title} \n ${element.link} \n\n`;
   });
 
-  message += "para mais acesse: https://www.nerdmaldito.com/";
+  message += `para mais acesse: ${process.env.SITE}"`;
 
   SendMessage(message);
 }
